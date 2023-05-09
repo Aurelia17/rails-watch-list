@@ -8,5 +8,20 @@
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
 %>
 </div>
+<div>
+  <% @list.bookmarks.each do |bookmark| %>
+  raise
+    <%= bookmark.movie.title %>
+  <% end %>
+</div>
 
 <%= link_to "Go back", lists_path, class: "btn btn-outline-dark btn-sm mt-2" %>
+
+<div class="form">
+  <h3>Add a new movie</h3>
+  <%= simple_form_for [ @list, @bookmark ] do |f| %>
+    <%= f.input :comment, placeholder: 'Add your comment' %>
+    <%= f.association :movie, input_html: { class: 'select2' } %>
+    <%= f.submit "Add movie", class: "btn btn-primary" %>
+  <% end %>
+</div>

@@ -10,8 +10,8 @@
 </div>
 <div>
   <% @list.bookmarks.each do |bookmark| %>
-  raise
-    <%= bookmark.movie.title %>
+    <%= image_tag bookmark.movie.poster_url, alt: "movie poster" %>
+    <p><%= bookmark.movie.title %></p>
   <% end %>
 </div>
 

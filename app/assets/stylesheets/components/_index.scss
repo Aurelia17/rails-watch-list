@@ -1,9 +1,15 @@
 // Import your components CSS files here.
+
 @import "alert";
 @import "avatar";
-@import "form_legend_clear";
-@import "navbar";
 @import "banner";
+@import "buttons";
+@import "cards";
+@import "cover";
+@import "form_legend_clear";
+@import "movies";
+@import "navbar";
+@import "tags";
 
 .cards {
   display: grid;
@@ -47,7 +53,15 @@
   }
 }
 
-.card-body a {
-  text-decoration: none;
-  color: black;
-}
+// .card-body a {
+//   text-decoration: none;
+//   color: black;
+// }
+
+// h5 {
+//   color: white;
+// }
+
+// .card-category {
+//   width: 100%;
+// }
